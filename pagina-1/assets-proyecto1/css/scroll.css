@@ -1,0 +1,70 @@
+:root {
+    --color-scrollbar: #d3d3d4;
+    --color-background-scrollbar: #eee;
+    --color-secondary: #04B4E0;
+}
+
+/* CHROME */
+.content-about::-webkit-scrollbar, .content::-webkit-scrollbar {
+    width: 25px;
+    background: transparent;
+}
+
+.content-about::-webkit-scrollbar-thumb, .content::-webkit-scrollbar-thumb {
+    border: 10px solid transparent;
+    box-shadow: none;
+
+
+}
+.content-about:hover::-webkit-scrollbar-thumb, .content:hover::-webkit-scrollbar-thumb{
+    box-shadow: inset 0 0 0 10px var(--color-scrollbar);
+}
+
+.content-about:hover::-webkit-scrollbar-thumb:hover, .content:hover::-webkit-scrollbar-thumb:hover{
+    border: 9px solid transparent;
+    box-shadow: inset 0 0 0 10px var(--color-secondary);
+    border-radius: 20px;
+}
+
+/* .content-about::-webkit-scrollbar-track{
+    margin: 15px 0;
+} */
+
+/* MOZILLA */
+
+.content-about, .card-aside {
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-scrollbar) transparent;
+}
+.card-aside {
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-scrollbar) var(--color-secondary);
+}
+
+/* ASIDE */
+
+.card-aside::-webkit-scrollbar {
+    width: 25px;
+    height: 25px;
+    /* margin: 20px; */
+    background: transparent;
+}
+.card-aside::-webkit-scrollbar-thumb {
+    border: 10px solid transparent;
+    box-shadow: none;
+}
+.card-aside:hover::-webkit-scrollbar-thumb{
+    box-shadow: inset 0 0 0 10px var(--color-background-scrollbar);
+}
+
+.card-aside:hover::-webkit-scrollbar-thumb:hover{
+    border: 9px solid transparent;
+    box-shadow: inset 0 0 0 10px var(--color-background-scrollbar);
+    border-radius: 20px;
+}
+
+.card-aside::-webkit-scrollbar-track{
+    background: var(--color-secondary);
+    /* margin: 10px 0; */
+}
+
